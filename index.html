@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rakesh Sen — Data Analyst. Turning raw data into powerful insights through data analysis, visualization, and machine learning." />
+  <meta name="keywords" content="Data Analyst, Python, Pandas, NumPy, Power BI, SQL, Machine Learning, Matplotlib, Seaborn" />
+  <title>Rakesh Sen | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="site-logo">
+        <!-- Logo SVG -->
+        <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Rakesh Sen Logo">
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F5C518"/>
+              <stop offset="100%" stop-color="#e0a800"/>
+            </linearGradient>
+          </defs>
+          <rect width="40" height="40" rx="12" fill="url(#logo-grad)"/>
+          <text x="7" y="29" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#1a1a2e" letter-spacing="-1">RS</text>
+          <circle cx="33" cy="9" r="3" fill="#1a1a2e" opacity="0.7"/>
+          <path d="M6 34 Q12 18 20 22 Q28 26 34 10" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.35"/>
+        </svg>
+        <span></span>
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle Light / Dark Mode">
+          <svg class="theme-icon-svg" id="theme-icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-icon-svg" id="theme-icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Journey</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">👋 Available for opportunities</div>
+      <h1 class="hero-title" id="hero-typed-title">
+        I'm <span class="highlight">Rakesh Sen</span><br/>
+        Data Analyst
+      </h1>
+      <p class="hero-subtitle">
+        Passionate about turning raw data into meaningful stories. I explore,
+        clean, visualize, and analyze data to uncover insights that drive real decisions. 📊
+      </p>
+
+
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">See My Work</a>
+        <a href="#contact" class="btn btn-outline" id="hero-contact-btn">Hire Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span><span>+</span>
+          <p>Projects Done</p>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span><span>+</span>
+          <p>Tools Mastered</p>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="100">0</span><span>%</span>
+          <p>Passion Level</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <div class="hero-blob"></div>
+      <div class="hero-avatar-ring">
+        <img src="photo_2026-06-13_01-24-04 (2).jpg" alt="Rakesh Sen - Data Analyst" class="hero-avatar" id="hero-avatar" />
+      </div>
+      <div class="floating-card card-1">📥 Data Collection</div>
+      <div class="floating-card card-2">🧹 Data Cleaning</div>
+      <div class="floating-card card-3">🔍 Data Analysis</div>
+      <div class="floating-card card-4">📊 Data Visualization</div>
+      <div class="floating-card card-5">💡 Insights</div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-tag">Who am I?</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hey! I'm <strong>Rakesh Sen</strong>, a passionate and self-driven
+            <strong>Data Analyst</strong> who loves turning messy data into clear, meaningful
+            insights. My journey into data started with curiosity — and now it's my obsession. 📊
+          </p>
+          <p>
+            I'm currently pursuing my <strong>B.Sc. (Hons.)</strong> and simultaneously building
+            my skills in Python, data analysis, and machine learning. Being a fresher means I bring
+            fresh eyes, enthusiasm, and a hunger to learn every single day. I believe the best
+            insights come from asking the right questions. 💛
+          </p>
+          <p>
+            I've worked on real-world datasets — from exploratory data analysis to building
+            interactive dashboards — and I'm always looking for the next challenge to grow.
+          </p>
+          <div class="about-tools">
+            <span class="tool-badge">Python</span>
+            <span class="tool-badge">Pandas</span>
+            <span class="tool-badge">NumPy</span>
+            <span class="tool-badge">SQL</span>
+            <span class="tool-badge">Power BI</span>
+            <span class="tool-badge">Matplotlib</span>
+            <span class="tool-badge">Seaborn</span>
+            <span class="tool-badge">Excel</span>
+            <span class="tool-badge">Streamlit</span>
+          </div>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <div class="info-item">
+              <span class="info-label">🎓 Education</span>
+              <span class="info-value">B.Sc. Hons. in CSE -(Pursuing)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📍 Location</span>
+              <span class="info-value">Bangladesh</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">💼 Status</span>
+              <span class="info-value available">Open to Work</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">✉️ Email</span>
+              <span class="info-value">rakeshsen7515699@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🧑‍💻 Role</span>
+              <span class="info-value">Fresher / Data Analyst</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary download-btn" id="download-cv-btn">Download CV ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills-section section" id="skills">
+    <div class="container">
+      <div class="section-tag">What I know</div>
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-sub">Organized into core subjects, key tools, and powerful libraries — built through hands-on practice and real projects.</p>
+
+      <!-- ── Category 1: Core Skills ── -->
+      <div class="skill-category" id="skill-cat-core">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🧠</span>
+          <h3>Core Skills</h3>
+          <p>Fundamental knowledge areas that power everything I do</p>
+        </div>
+        <div class="circular-skills">
+          <div class="skill-circle-item">
+            <div class="circle-progress" data-percent="85" id="skill-python">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="fill" cx="60" cy="60" r="50"/></svg>
+              <div class="circle-label">85%</div>
+            </div>
+            <p>Python</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="circle-progress" data-percent="75" id="skill-ml">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="fill" cx="60" cy="60" r="50"/></svg>
+              <div class="circle-label">75%</div>
+            </div>
+            <p>Machine Learning</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="circle-progress" data-percent="65" id="skill-dp">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="fill" cx="60" cy="60" r="50"/></svg>
+              <div class="circle-label">65%</div>
+            </div>
+            <p>Deep Learning</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="circle-progress" data-percent="80" id="skill-sql">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="fill" cx="60" cy="60" r="50"/></svg>
+              <div class="circle-label">80%</div>
+            </div>
+            <p>SQL</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="circle-progress" data-percent="78" id="skill-eda">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="fill" cx="60" cy="60" r="50"/></svg>
+              <div class="circle-label">78%</div>
+            </div>
+            <p>Data Analysis (EDA)</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="circle-progress" data-percent="70" id="skill-stats">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="fill" cx="60" cy="60" r="50"/></svg>
+              <div class="circle-label">70%</div>
+            </div>
+            <p>Statistics</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Category 2: Tools & Platforms (Animated) ── -->
+      <div class="skill-category skill-category--gradient" id="skill-cat-tools">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">⚙️</span>
+          <h3>Tools &amp; Platforms</h3>
+          <p>Software and platforms I use daily to analyze and visualize data</p>
+        </div>
+        <div class="tools-animated-grid">
+          <div class="tool-anim-card" id="tc-powerbi">
+            <div class="tool-anim-icon-wrap">
+              <div class="tool-anim-ring" data-percent="80">
+                <svg viewBox="0 0 100 100"><circle class="ring-track" cx="50" cy="50" r="42"/><circle class="ring-fill" cx="50" cy="50" r="42"/></svg>
+                <span class="tool-anim-emoji">📊</span>
+              </div>
+            </div>
+            <h4>Power BI</h4>
+            <p>Business intelligence &amp; interactive dashboards</p>
+            <span class="tool-anim-pct">80%</span>
+          </div>
+          <div class="tool-anim-card" id="tc-excel">
+            <div class="tool-anim-icon-wrap">
+              <div class="tool-anim-ring" data-percent="90">
+                <svg viewBox="0 0 100 100"><circle class="ring-track" cx="50" cy="50" r="42"/><circle class="ring-fill" cx="50" cy="50" r="42"/></svg>
+                <span class="tool-anim-emoji">📋</span>
+              </div>
+            </div>
+            <h4>Excel / Sheets</h4>
+            <p>Data entry, formulas, pivots &amp; reporting</p>
+            <span class="tool-anim-pct">90%</span>
+          </div>
+          <div class="tool-anim-card" id="tc-jupyter">
+            <div class="tool-anim-icon-wrap">
+              <div class="tool-anim-ring" data-percent="88">
+                <svg viewBox="0 0 100 100"><circle class="ring-track" cx="50" cy="50" r="42"/><circle class="ring-fill" cx="50" cy="50" r="42"/></svg>
+                <span class="tool-anim-emoji">📓</span>
+              </div>
+            </div>
+            <h4>Jupyter Notebook</h4>
+            <p>Interactive Python coding &amp; EDA workflows</p>
+            <span class="tool-anim-pct">88%</span>
+          </div>
+          <div class="tool-anim-card" id="tc-colab">
+            <div class="tool-anim-icon-wrap">
+              <div class="tool-anim-ring" data-percent="85">
+                <svg viewBox="0 0 100 100"><circle class="ring-track" cx="50" cy="50" r="42"/><circle class="ring-fill" cx="50" cy="50" r="42"/></svg>
+                <span class="tool-anim-emoji">☁️</span>
+              </div>
+            </div>
+            <h4>Google Colab</h4>
+            <p>Cloud-based notebooks &amp; ML experiments</p>
+            <span class="tool-anim-pct">85%</span>
+          </div>
+          <div class="tool-anim-card" id="tc-vscode">
+            <div class="tool-anim-icon-wrap">
+              <div class="tool-anim-ring" data-percent="82">
+                <svg viewBox="0 0 100 100"><circle class="ring-track" cx="50" cy="50" r="42"/><circle class="ring-fill" cx="50" cy="50" r="42"/></svg>
+                <span class="tool-anim-emoji">💻</span>
+              </div>
+            </div>
+            <h4>VS Code</h4>
+            <p>Primary code editor for Python &amp; data projects</p>
+            <span class="tool-anim-pct">82%</span>
+          </div>
+          <div class="tool-anim-card" id="tc-git">
+            <div class="tool-anim-icon-wrap">
+              <div class="tool-anim-ring" data-percent="70">
+                <svg viewBox="0 0 100 100"><circle class="ring-track" cx="50" cy="50" r="42"/><circle class="ring-fill" cx="50" cy="50" r="42"/></svg>
+                <span class="tool-anim-emoji">🌿</span>
+              </div>
+            </div>
+            <h4>Git &amp; GitHub</h4>
+            <p>Version control &amp; project portfolio management</p>
+            <span class="tool-anim-pct">70%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Category 3: Python Libraries ── -->
+      <div class="skill-category skill-category--dark" id="skill-cat-libs">
+        <div class="skill-cat-header light">
+          <span class="skill-cat-icon">📦</span>
+          <h3>Python Libraries</h3>
+          <p>The libraries I use to wrangle, analyze, and visualize data</p>
+        </div>
+        <div class="libs-grid">
+          <div class="lib-card" id="lib-pandas">
+            <div class="lib-icon">🐼</div>
+            <h4>Pandas</h4>
+            <p>Data cleaning, wrangling & manipulation</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="90" style="width:0%"></div></div>
+            <span class="lib-percent">90%</span>
+          </div>
+          <div class="lib-card" id="lib-numpy">
+            <div class="lib-icon">🔢</div>
+            <h4>NumPy</h4>
+            <p>Numerical computing & array operations</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="85" style="width:0%"></div></div>
+            <span class="lib-percent">85%</span>
+          </div>
+          <div class="lib-card" id="lib-matplotlib">
+            <div class="lib-icon">📉</div>
+            <h4>Matplotlib</h4>
+            <p>Static charts, plots & visualizations</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="82" style="width:0%"></div></div>
+            <span class="lib-percent">82%</span>
+          </div>
+          <div class="lib-card" id="lib-seaborn">
+            <div class="lib-icon">🎨</div>
+            <h4>Seaborn</h4>
+            <p>Statistical data visualization</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="80" style="width:0%"></div></div>
+            <span class="lib-percent">80%</span>
+          </div>
+          <div class="lib-card" id="lib-sklearn">
+            <div class="lib-icon">⚙️</div>
+            <h4>Scikit-learn</h4>
+            <p>ML models, preprocessing & evaluation</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="72" style="width:0%"></div></div>
+            <span class="lib-percent">72%</span>
+          </div>
+          <div class="lib-card" id="lib-plotly">
+            <div class="lib-icon">✨</div>
+            <h4>Plotly</h4>
+            <p>Interactive & dynamic visualizations</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="68" style="width:0%"></div></div>
+            <span class="lib-percent">68%</span>
+          </div>
+          <div class="lib-card" id="lib-tensorflow">
+            <div class="lib-icon">🧠</div>
+            <h4>TensorFlow</h4>
+            <p>Deep learning & neural network models</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="60" style="width:0%"></div></div>
+            <span class="lib-percent">60%</span>
+          </div>
+          <div class="lib-card" id="lib-scipy">
+            <div class="lib-icon">🔬</div>
+            <h4>SciPy</h4>
+            <p>Scientific computing & statistics</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="65" style="width:0%"></div></div>
+            <span class="lib-percent">65%</span>
+          </div>
+          <div class="lib-card" id="lib-streamlit">
+            <div class="lib-icon">🌐</div>
+            <h4>Streamlit</h4>
+            <p>Interactive data apps</p>
+            <div class="lib-bar"><div class="lib-bar-fill" data-width="75" style="width:0%"></div></div>
+            <span class="lib-percent">75%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE / JOURNEY ===== -->
+  <section class="experience-section section" id="experience">
+    <div class="container">
+      <div class="section-tag">My Journey</div>
+      <h2 class="section-title">My Journey So Far</h2>
+      <p class="section-sub">
+        As a fresher, my journey has been all about self-learning, building projects, and
+        growing every single day. Every dataset I touched taught me something new. 🚀
+      </p>
+      <div class="timeline">
+        <div class="timeline-item" id="exp-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 — Now</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-company">Self-Learning & Projects</span>
+              <span class="timeline-badge current">Active</span>
+            </div>
+            <h3>Data Analysis — Fresher</h3>
+            <ul>
+              <li>Completed 10+ personal data analysis projects on real-world datasets</li>
+              <li>Learned Python, Pandas, NumPy, Matplotlib, Seaborn from scratch</li>
+              <li>Built dashboards in Power BI and Excel for data storytelling</li>
+              <li>Practised EDA on Kaggle datasets — explored trends, patterns & outliers</li>
+              <li>Applied basic ML models (Linear Regression, KNN, Decision Tree) using Scikit-learn</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>Pandas</span><span>Power BI</span><span>Kaggle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 — 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-company">Data Analyst — Fresher</span>
+            </div>
+            
+            <ul>
+              <li>Completed Python for Data Science courses on various platforms</li>
+              <li>Studied SQL fundamentals and wrote complex queries for analysis</li>
+              <li>Learned data visualization best practices with Matplotlib & Seaborn</li>
+              
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>SQL</span><span>NumPy</span><span>Matplotlib</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023(July) — 2024</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-company">B.Sc. (Hons.) in CSE — Pursuing</span>
+            </div>
+            <h3>Academic Foundation</h3>
+            <ul>
+              <li>Started B.Sc.(Hons) in Computer Science & Engineering— building strong analytical and mathematical base</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Mathematics</span><span>Statistics</span><span>Excel</span><span>Python Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>I turn data into decisions, wherever I am! 🚀</h2>
+      <a href="#contact" class="btn btn-dark" id="cta-hire-btn">Hire Me Now</a>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects-section section" id="projects">
+    <div class="container">
+      <div class="section-tag">My Work</div>
+      <h2 class="section-title">What Have I Created?</h2>
+      <p class="section-sub">A selection of real data analysis projects — every one built with curiosity and Python. 📊</p>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="eda" id="filter-eda">EDA</button>
+        <button class="filter-btn" data-filter="viz" id="filter-viz">Visualization</button>
+        <button class="filter-btn" data-filter="ml" id="filter-ml">ML Basics</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="eda" id="project-sales-eda">
+          <div class="project-img">
+            <img src="project1.png" alt="Sales Data EDA" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Pandas</span><span>NumPy</span><span>Python</span>
+            </div>
+            <h3>Sales Data — Exploratory Analysis</h3>
+            <p>Performed full EDA on a retail sales dataset — cleaned data, found trends, outliers & seasonal patterns using Pandas & NumPy.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="viz" id="project-covid-viz">
+          <div class="project-img">
+            <img src="project2.png" alt="COVID-19 Data Visualization" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Matplotlib</span><span>Seaborn</span><span>Plotly</span>
+            </div>
+            <h3>COVID-19 Data Visualization</h3>
+            <p>Built interactive and static charts tracking COVID-19 spread, recovery rates, and country-wise comparisons using Plotly & Seaborn.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="eda" id="project-ipl-eda">
+          <div class="project-img">
+            <img src="project3.png" alt="IPL Data Analysis" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Pandas</span><span>Matplotlib</span><span>Python</span>
+            </div>
+            <h3>IPL Cricket — Data Analysis</h3>
+            <p>Analyzed IPL match data (2008–2023) to find top batsmen, bowlers, win trends, toss impact, and team performance stats.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card--yellow" data-category="viz" id="project-powerbi">
+          <div class="project-icon-large">📊</div>
+          <div class="project-info">
+            <div class="project-tags dark">
+              <span>Power BI</span><span>Excel</span><span>SQL</span>
+            </div>
+            <h3>Sales Dashboard — Power BI</h3>
+            <p>Built an interactive Power BI dashboard to track sales KPIs, regional performance, and monthly trends with drill-through filters.</p>
+            <a href="#" class="btn btn-dark small">View Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--dark" data-category="ml" id="project-price-pred">
+          <div class="project-icon-large">🏠</div>
+          <div class="project-info">
+            <div class="project-tags light">
+              <span>Scikit-learn</span><span>Pandas</span><span>Python</span>
+            </div>
+            <h3>House Price Prediction</h3>
+            <p>Applied Linear Regression on a housing dataset — feature engineering, data cleaning, model training & evaluation with RMSE.</p>
+            <a href="#" class="btn btn-primary small">View Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--light" data-category="eda" id="project-student">
+          <div class="project-icon-large">🎓</div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Pandas</span><span>Seaborn</span><span>NumPy</span>
+            </div>
+            <h3>Student Performance Analysis</h3>
+            <p>Analyzed student marks data to find correlations between study hours, attendance, gender, and final exam performance.</p>
+            <a href="#" class="btn btn-outline small">View Details →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOOLS MARQUEE ===== -->
+  <section class="tools-section section">
+    <div class="container">
+      <div class="section-tag">My Stack</div>
+      <h2 class="section-title">Tools I Work With</h2>
+      <div class="tools-scroll">
+        <div class="tools-track">
+          <div class="tool-item" id="tool-python">🐍 Python</div>
+          <div class="tool-item" id="tool-pandas">🐼 Pandas</div>
+          <div class="tool-item" id="tool-numpy">🔢 NumPy</div>
+          <div class="tool-item" id="tool-matplotlib">📉 Matplotlib</div>
+          <div class="tool-item" id="tool-seaborn">🎨 Seaborn</div>
+          <div class="tool-item" id="tool-sql">🗄️ SQL</div>
+          <div class="tool-item" id="tool-powerbi">📊 Power BI</div>
+          <div class="tool-item" id="tool-plotly">✨ Plotly</div>
+          <div class="tool-item" id="tool-sklearn">⚙️ Scikit-learn</div>
+          <div class="tool-item" id="tool-excel">📋 Excel</div>
+          <div class="tool-item" id="tool-jupyter">📓 Jupyter</div>
+          <div class="tool-item" id="tool-git">🌿 Git</div>
+          <div class="tool-item" id="tool-streamlit">🌐 Streamlit</div>
+          <!-- Duplicate for seamless scroll -->
+          <div class="tool-item">🐍 Python</div>
+          <div class="tool-item">🐼 Pandas</div>
+          <div class="tool-item">🔢 NumPy</div>
+          <div class="tool-item">📉 Matplotlib</div>
+          <div class="tool-item">🎨 Seaborn</div>
+          <div class="tool-item">🗄️ SQL</div>
+          <div class="tool-item">📊 Power BI</div>
+          <div class="tool-item">✨ Plotly</div>
+          <div class="tool-item">⚙️ Scikit-learn</div>
+          <div class="tool-item">📋 Excel</div>
+          <div class="tool-item">📓 Jupyter</div>
+          <div class="tool-item">🌿 Git</div>
+          <div class="tool-item">🌐 Streamlit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section section" id="testimonials">
+    <div class="container">
+      <div class="section-tag">Kind Words</div>
+      <h2 class="section-title">What People Say About Me?</h2>
+      <p class="section-sub">
+        There's nothing more heartwarming than hearing from the people I've worked with or learned alongside.
+        Each of them has been part of my journey. I'm truly grateful. 💛
+      </p>
+      <div class="testimonials-slider">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card" id="test-1">
+            <div class="test-avatar">
+              <div class="avatar-placeholder">AM</div>
+            </div>
+            <p class="test-text">"Rakesh has an incredible ability to dig deep into data and come out with clear, powerful insights. His EDA on our sales dataset revealed patterns we never thought to look for. Really impressed!"</p>
+            <div class="test-author">
+              <strong>Amit Mondal</strong>
+              <span>Mentor, Data Analytics Bootcamp</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-card" id="test-2">
+            <div class="test-avatar">
+              <div class="avatar-placeholder">PD</div>
+            </div>
+            <p class="test-text">"Even as a fresher, Rakesh brings a level of dedication and analytical thinking that is rare. His Python skills and curiosity for finding patterns in data are genuinely impressive. Keep going!"</p>
+            <div class="test-author">
+              <strong>Priya Das</strong>
+              <span>Senior Data Analyst, Tech Firm</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-card" id="test-3">
+            <div class="test-avatar">
+              <div class="avatar-placeholder">SK</div>
+            </div>
+            <p class="test-text">"Rakesh built a really clean Power BI dashboard for our college project. His attention to detail, colour choices and story-telling with data was spot on. Very professional output!"</p>
+            <div class="test-author">
+              <strong>Souvik Kumar</strong>
+              <span>Classmate & Collaborator</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-card" id="test-4">
+            <div class="test-avatar">
+              <div class="avatar-placeholder">RB</div>
+            </div>
+            <p class="test-text">"Rakesh doesn't just look at data — he tells stories with it. His IPL analysis project was fun, insightful, and well-presented. The visualizations were clean and the conclusions were sharp."</p>
+            <div class="test-author">
+              <strong>Rahul Biswas</strong>
+              <span>Friend & Fellow Learner</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="slider-dots" id="slider-dots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+          <button class="dot" data-index="3"></button>
+        </div>
+        <div class="slider-arrows">
+          <button class="arrow-btn" id="prev-btn">←</button>
+          <button class="arrow-btn" id="next-btn">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="section-tag">Get in Touch</div>
+      <h2 class="section-title">Can't Wait to Hear<br />from You</h2>
+      <p class="section-sub">
+        If you have a project, an idea, or just want to connect — I'd love to hear from you!
+        I'm always open to learning and collaborating. Your message matters to me. 💬
+      </p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Whats up?</h3>
+          <div class="contact-detail" id="contact-email-detail">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <p>Email me at</p>
+              <a href="mailto:Rakesh7515699@gmail.com">Rakesh7515699@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail" id="contact-linkedin-detail">
+            <div class="contact-icon">💼</div>
+            <div>
+              <p>Connect on</p>
+              <a href="https://www.linkedin.com/in/rakeshsenbd/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </div>
+          </div>
+          <div class="contact-detail" id="contact-github-detail">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <p>Explore my code</p>
+              <a href="https://github.com/rakeshsenSE">GitHub Portfolio</a>
+            </div>
+          </div>
+          <div class="contact-detail" id="contact-kaggle-detail">
+            <div class="contact-icon">📊</div>
+            <div>
+              <p>Find me on</p>
+              <a href="https://www.kaggle.com/rakeshsen00" target="_blank" rel="noopener noreferrer">Kaggle Profile</a>
+            </div>
+          </div>
+        </div>
+        <form action="https://formspree.io/f/mgojgren" method="POST" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name (required)</label>
+            <input type="text" id="name" name="name" placeholder="Full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project discussion, collaboration..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message (required)</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or idea..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="submit-btn">Send Message 🚀</button>
+          <div class="form-success" id="form-success">
+            ✅ Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="nav-logo large">Rakesh<span>Sen</span></div>
+        <p>Data Analyst — turning numbers into meaningful stories. 📊</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/rakeshsenbd/" class="social-link" id="footer-linkedin">in</a>
+          <a href="https://github.com/rakeshsenSE" class="social-link" id="footer-github">🐙</a>
+          <a href="https://www.kaggle.com/rakeshsen00" class="social-link" id="footer-kaggle">K</a>
+         
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Rakesh Sen. Built with ❤️ and lots of data.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="scroll-top" id="scroll-top-btn">↑</a>
+  <script src="script.js"></script>
+</body>
+</html>
